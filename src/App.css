@@ -1,0 +1,11 @@
+@plugin "daisyui";
+@import "tailwindcss";
+
+/* Scrollbar styles */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

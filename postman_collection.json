@@ -1,0 +1,503 @@
+{
+    "info": {
+        "_postman_id": "a1da8434-3cc7-4e35-84ca-31018fae0d2f",
+        "name": "Settler",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "37783510",
+        "_collection_link": "https://go.postman.co/collection/37783510-a1da8434-3cc7-4e35-84ca-31018fae0d2f?source=collection_link"
+    },
+    "item": [
+        {
+            "name": "http://localhost:7777/signup",
+            "request": {
+                "auth": {
+                    "type": "noauth"
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "\n// {\n\n//     \"email\": \"vishal@gmail.com\",\n//     \"password\": \"Avi@1234\",\n//     \"role\":\"student\",\n//     \"phoneNumber\":\"+919555593907\",\n//     \"parentInfo\":{\n//         \"firstName\":\"Rajkumar\",\n//         \"lastName\":\"Mishra\",\n//         \"email\":\"raj@gmail.com\",\n//         \"phoneNumber\":\"9882828888\"\n//     }\n// }\n\n{\n    \"firstName\":\"Avinash\",\n    \"lastName\":\"Mishra\",\n    \"address\":\"airport road victoria lane 3\",\n    \"email\":\"raj@gmail.com\",\n    \"role\":\"parent\",\n    \"password\":\"Avi@1234\",\n    \"phoneNumber\":\"9536363668\"\n    \n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/signup",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "signup"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/signin",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\n    \"email\": \"avinash12@gmail.com\",\n    \"password\": \"Avi@1234\",\n    \"role\":\"teacher\"\n}\n\n// {\n\n//     \"email\": \"raj@gmail.com\",\n//     \"password\": \"Avi@1234\",\n//     \"role\":\"parent\"\n// }\n\n",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/signin",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "signin"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/forget-password",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n\n    \"email\": \"avi@gmail.com\",\n    \"newpassword\": \"Avi@1234\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/forget-password",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "forget-password"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/markattandance/6a9576ff3daeefd990e5960c",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"subjectID\":\"6a9abaa9e1c77f5b10e25037\",\n    \"status\":\"present\",\n    \"date\":\"1788134400\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/markattandance/6a9576ff3daeefd990e5960c",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "markattandance",
+                        "6a9576ff3daeefd990e5960c"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/create-subject",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\":\"Math\",\n    \"description\":\"This is Math Subject\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/create-subject",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "create-subject"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/gettotalattandance/6a9576ff3daeefd990e5960c",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/gettotalattandance/6a9576ff3daeefd990e5960c",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "gettotalattandance",
+                        "6a9576ff3daeefd990e5960c"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/create-test",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"subjectID\": \"6a96b79a69ceb34eedadf896\",\n    \"testDuration\": \"60Min\",\n    \"testName\": \"Unit test\",\n    \"testtype\": \"unit Test\",\n    \"totalmarks\": \"100\",\n    \"date\": \"1788134400\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/create-test",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "create-test"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/teacher-markattandance/6a97bc5dc78c421e1e361187",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"status\":\"absent\",\n    \"date\":\"1788343843\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/teacher-markattandance/6a97ff9f987e6dec83e1f3f6",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "teacher-markattandance",
+                        "6a97ff9f987e6dec83e1f3f6"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/class",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/class",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "class"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/getsubjectattandance/6a9576ff3daeefd990e5960c",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/getsubjectattandance/6a9576ff3daeefd990e5960c",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "getsubjectattandance",
+                        "6a9576ff3daeefd990e5960c"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/create/order",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"feeType\":\"monthly\",\n    \"feeAmount\":\"3000\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/create/order",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "create",
+                        "order"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/create-payment-link/6a9576ff3daeefd990e5960c",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"feeType\":\"monthly\",\n    \"feeAmount\":\"3000\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/create-payment-link/6a9576ff3daeefd990e5960c",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "create-payment-link",
+                        "6a9576ff3daeefd990e5960c"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/update/profile",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"firstName\":\"Avinash\",\n    \"lastName\":\"Mishra\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/update/profile/6a9576ff3daeefd990e5960c",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "update",
+                        "profile",
+                        "6a9576ff3daeefd990e5960c"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/getallchildren",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/getallchildren",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "getallchildren"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/userDetails/6a9bd2f631fa951377119906",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/userDetails/6a9bd2f631fa951377119906",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "userDetails",
+                        "6a9bd2f631fa951377119906"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/getalluser",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/getallstudents",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "getallstudents"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/getstudentAttandance",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/getstudentAttandance",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "getstudentAttandance"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/scheduleClass",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"subjectId\": \"6a96b79a69ceb34eedadf896\",\n    \"date\": \"1789644118\",\n    \"topic\": \"Thermodynamic\",\n    \"startTime\": \"1789660800\",\n    \"room\": \"room 102\",\n    \"meetingLink\": \"\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "http://localhost:7777/scheduleClass",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "scheduleClass"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/getscheduleclass",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/getscheduleclass",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "getscheduleclass"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "http://localhost:7777/deleteschedule/6aabe5bc3fa0136464f1f004",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:7777/deleteschedule/6aabe5bc3fa0136464f1f004",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7777",
+                    "path": [
+                        "deleteschedule",
+                        "6aabe5bc3fa0136464f1f004"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
