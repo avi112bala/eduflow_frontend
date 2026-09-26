@@ -14,8 +14,8 @@ export const Login = () => {
     const [role, setRole] = useState<RoleType>('parent')
     const [isLoading, setIsLoading] = useState(false)
     const [formData, setFormData] = useState({
-        email: 'raj@gmail.com',
-        password: 'Avi@1234'
+        email: '',
+        password: ''
     })
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
