@@ -109,7 +109,7 @@ export const Login = () => {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                placeholder="raj@gmail.com"
+                                placeholder="Enter your email"
                                 className="w-full pl-11 pr-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all shadow-sm"
                                 required
                             />
@@ -128,7 +128,7 @@ export const Login = () => {
                                 name="password"
                                 value={formData.password}
                                 onChange={handleChange}
-                                placeholder="Avi@1234"
+                                placeholder="Enter your Password"
                                 className="w-full pl-11 pr-11 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all shadow-sm"
                                 required
                             />
